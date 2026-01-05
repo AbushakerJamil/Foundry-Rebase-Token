@@ -16,8 +16,8 @@ contract RebaseToken is ERC20 {
 
     uint256 private s_InterestRate = 5e10;
     uint256 private constant PRECISION_FACTOR = 1e18;
-    mapping(address => uint256) s_userInterestRate;
-    mapping(address => uint256) s_userLastUpdatedTimestamp;
+    mapping(address => uint256) private s_userInterestRate;
+    mapping(address => uint256) private s_userLastUpdatedTimestamp;
 
     event InterestRateSet(uint256 newInterestRate);
 
