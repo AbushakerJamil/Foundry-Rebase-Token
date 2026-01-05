@@ -76,7 +76,7 @@ contract RebaseToken is ERC20 {
         s_userLastUpdatedTimestamp[_user] = block.timestamp;
     }
 
-    function getUserInterestRate(address _user) external view returns (uint256) {
-        return s_userInterestRate(_user);
-    }
+    // function getUserInterestRate(address _user) external view returns (uint256) {
+    //     return s_userInterestRate(_user);
+    // }
 }
